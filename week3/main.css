@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Short Stack', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+#content {
+    padding: 3%;
+}
+
+#warning{
+    display: none;
+}
+nav {
+    background-color: #B22A0C;
+}
+
+nav ul {
+    width: 115px;
+    margin-left: 30%;
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: inline;
+}
+
+section {
+    border: 2px solid red;
+    padding: 3%;
+    width: 26%;
+    float: left;
+}
+
+
+ /* Custom, iPhone Retina */ 
+ @media (max-width : 600px) {
+
+    section {
+        border: 2px solid red;
+        padding: 3%;
+        width: 80%;
+    }
+    h1{
+        font-size:1.6em;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media (max-width : 480px) {
+    section{
+        display:none;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media (max-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media (max-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media (max-width : 1200px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 933px) {
+    #warning{
+        display:block;
+    }
+
+}
+
+/**
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+**/
